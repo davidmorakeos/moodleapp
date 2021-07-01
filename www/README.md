@@ -1,3 +1,5 @@
-This folder only contains compiled code and assets. Please do not modify files in this folder, the app code is in the "src" folder.
+Moodle Mobile
+============
 
-The config.json values are ignored by the app. This file is informative for Continous Integration processes used by Moodle HQ.
+This repository is outdated, for the Moodle mobile app code please go to https://github.com/moodlehq/moodleapp
+

@@ -28,7 +28,7 @@ $turquoise:       #007982; // Accent.
 $green:           #5e8100; // Accent.
 $red:             #cb3d4d;
 $orange:          #0a4797; // Accent (never text).
-$yellow:          #fbad1a; // Accent (never text).
+$yellow:          #0a4797; // Accent (never text).
 $purple:          #8e24aa; // Accent (never text).
 
 // Branded apps customization
@@ -329,7 +329,7 @@ $core-question-state-partial-text:    $yellow !default;
 $core-question-state-incorrect-color: $red-light !default;
 
 $core-dd-question-selected-shadow: 2px 2px 4px $gray-dark !default;
-$core-dd-question-colors: $white, $blue-light, #DCDCDC, #D8BFD8, #87CEFA, #DAA520, #FFD700, #F0E68C !default;
+$core-dd-question-colors: $white, $blue-light, #DCDCDC, #D8BFD8, #87CEFA, #0a4797, #FFD700, #F0E68C !default;
 
 // Mixins
 // -------------------------
