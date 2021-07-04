@@ -34,12 +34,14 @@
     <preference name="AllowInlineMediaPlayback" value="true" />
     <preference name="LoadUrlTimeoutValue" value="60000" />
     <preference name="load-url-timeout" value="60000" />
-    <preference name="SplashScreen" value="screen"/>
-    <preference name="AutoHideSplashScreen" value="true"/>
-    <preference name="SplashShowOnlyFirstTime" value="false"/>
-    <preference name="ShowSplashScreenSpinner" value="false"/>
-    <preference name="FadeSplashScreen" value="false"/>
-    <preference name="SplashScreenDelay" value="20000"/>
+    <preference name="AutoHideSplashScreen" value="false" />
+    <preference name="SplashScreenDelay" value="10000" />
+    <preference name="FadeSplashScreenDuration" value="1000" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="ShowSplashScreen" value="true" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    <preference name="SplashShowOnlyFirstTime" value="false" />
+    <preference name="FadeSplashScreen" value="true" />
     <splash src="/resources/splash.png"/>
     <preference name="android-minSdkVersion" value="19" />
     <preference name="android-targetSdkVersion" value="29" />
