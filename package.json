@@ -147,8 +147,6 @@
     "@types/promise.prototype.finally": "^2.0.4",
     "acorn": "^5.7.4",
     "cordova-android": "^9.1.0",
-    "cordova-ios": "^6.2.0",
-    "cordova-plugin-webintent": "^0.0.2",
     "cordova-support-google-services": "^1.2.1",
     "cordova.plugins.diagnostic": "^5.0.2",
     "electron-builder-lib": "^20.23.1",
@@ -178,8 +176,7 @@
   },
   "cordova": {
     "platforms": [
-      "android",
-      "ios"
+      "android"
     ],
     "plugins": {
       "com-darryncampbell-cordova-plugin-intent": {},
@@ -229,8 +226,6 @@
         "KEEP_AVAUDIOSESSION_ALWAYS_ACTIVE": "NO"
       },
       "cordova.plugins.diagnostic": {},
-      "WebIntent": {},
-      "com.borismus.webintent": {},
       "cordova-plugin-add-swift-support": {}
     }
   },
