@@ -358,9 +358,7 @@ function detect_lang($lang, $keys) {
     return false;
 }
 
-function save_key($key, $value, $path) {
-    $filePath = $path . '/en.json';
-
+function save_key($key, $value, $filePath) {
     $file = file_get_contents($filePath);
     $file = (array) json_decode($file);
     $value = html_entity_decode($value);
@@ -390,15 +388,18 @@ function override_component_lang_files($keys, $translations) {
             case 'addon':
                 switch($component) {
                     case 'moodle':
-                        $path .= 'lang';
+                        $path .= 'lang.json';
                         break;
                     default:
-                        $path .= $type.'/'.str_replace('_', '/', $component).'/lang';
+                        $path .= $type.'/'.str_replace('_', '/', $component).'/lang.json';
                         break;
                 }
                 break;
             case 'assets':
-                $path .= $type.'/'.$component;
+                $path .= $type.'/'.$component.'.json';
+                break;
+            default:
+                $path .= $type.'/lang.json';
                 break;
             default:
                 $path .= $type.'/lang';
@@ -406,7 +407,7 @@ function override_component_lang_files($keys, $translations) {
 
         }
 
-        if (is_file($path.'/en.json')) {
+        if (is_file($path)) {
             save_key($plainid, $value, $path);
         }
     }

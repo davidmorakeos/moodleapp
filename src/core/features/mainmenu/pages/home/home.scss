@@ -1,0 +1,19 @@
+@import "~theme/globals";
+
+@if ($core-dashboard-logo) {
+    .in-toolbar.md h1 .core-header-logo {
+        max-height: $toolbar-md-height - 24;
+    }
+
+    .in-toolbar.ios h1 .core-header-logo {
+        max-height: $toolbar-ios-height - 24;
+    }
+
+    .in-toolbar h1 core-format-text {
+        display: none;
+    }
+} @else {
+    .in-toolbar h1 .core-header-logo {
+        display: none;
+    }
+}
